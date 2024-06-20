@@ -1,0 +1,72 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* This ensures the text is justified */
+}
+
+.about-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: justify;
+}
+
+.detail-item {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.detail-item strong {
+    display: inline-block;
+    width: auto;
+}
+.download-cv{
+    background: #8ec329;
+    border: 1px solid #8ec329;
+}
+
+.about-linkedin-btn{
+    margin-left:10px
+}

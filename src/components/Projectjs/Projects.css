@@ -1,0 +1,46 @@
+.projects-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(135deg, #88604a 0%, #612210 100%); /* Attractive gradient background */
+    color: #fff; /* Set text color to white for better contrast */
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.project-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 5px;
+}
+
+/* Responsive layout for grid columns */
+.p-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p-col-12 {
+    flex: 0 0 calc(100% - 30px); /* Adjust width of columns with padding */
+    margin-bottom: 15px; /* Adjust margin to account for padding on cards */
+}
+
+@media (min-width: 768px) {
+    .p-col-md-4 {
+        flex: 0 0 calc(33.3333% - 30px); /* Adjust width of columns with padding */
+    }
+}

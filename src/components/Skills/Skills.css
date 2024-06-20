@@ -1,0 +1,73 @@
+.progress-bars-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.progress-bars-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    position: relative;
+    background: #f3f3f3;
+    border-radius: 5px;
+    width: 100%; /* Adjust width as needed */
+    height: 25px; /* Set the height for the progress bar */
+    overflow: hidden;
+}
+
+.percentage {
+    background: linear-gradient(to right, #4caf50, #8bc34a); /* Default color */
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.skill1 {
+    background: linear-gradient(to right, #ff6f61, #ff9068); /* Multicolor gradient */
+}
+
+.skill2 {
+    background: linear-gradient(to right, #42a5f5, #478ed1); /* Multicolor gradient */
+}
+
+.skill3 {
+    background: linear-gradient(to right, #66bb6a, #4caf50); /* Multicolor gradient */
+}
+
+.skill4 {
+    background: linear-gradient(to right, #ffa726, #fb8c00); /* Multicolor gradient */
+}
+
+.skill5 {
+    background: linear-gradient(to right, #ab47bc, #8e24aa); /* Multicolor gradient */
+}
+
+.skill6 {
+    background: linear-gradient(to right, #ec407a, #d81b60); /* Multicolor gradient */
+}

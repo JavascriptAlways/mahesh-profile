@@ -1,0 +1,37 @@
+.education-experience-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: auto;
+    margin: 0 auto;
+    margin-bottom:40px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entry {
+    background: #f3f3f3;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.entry h3 {
+    margin-bottom: 5px;
+}
+
+.entry p {
+    margin-bottom: 5px;
+}
+
+.education-heading{
+    margin-top:50px
+}

@@ -1,0 +1,24 @@
+.experience-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.entry {
+    background: #c6cc84;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.entry h3 {
+    margin-bottom: 5px;
+}
+
+.entry p {
+    margin-bottom: 5px;
+}
+
+.color1 {
+    background: #a3ab49;
+}
