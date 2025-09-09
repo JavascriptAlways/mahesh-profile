@@ -2,6 +2,15 @@ import { Link } from 'react-router-dom';
 import './About.css';
 import { Button } from 'primereact/button';
 const About = () => {
+  
+  function countYears() 
+  {
+    const currentYear = new Date().getFullYear();
+    const startYear = 2016;
+    return currentYear - startYear + 1;
+   }
+
+const yearsCount = countYears();
   return (
     <div className="about-container" id="myAbout">
       <div className="about-image">
@@ -11,7 +20,7 @@ const About = () => {
         <h2>UI Developer & Web Expert</h2>
         <h4>ReactJs, Javascript, Redux, Typescript, NextJs, HTML/CSS, UI Frameworks</h4>
         <p>
-          Offering over 8 years of experience in software design, development, testing, product support, application maintenance and handling real time issues on live server and passionate about new opportunities and innovation at work.
+          Offering over {yearsCount} years of experience in software design, development, testing, product support, application maintenance and handling real time issues on live server and passionate about new opportunities and innovation at work.
         </p>
         <div className="about-details">
           <div className="profile-details">
@@ -28,7 +37,7 @@ const About = () => {
               <strong>Address:</strong> New Delhi
             </div>
             <div className="detail-item">
-              <strong>Experience:</strong> 8 years <br />(ReactJs,Typescript,Javascript,Redux)
+              <strong>Experience:</strong> {yearsCount} years <br />(ReactJs,Typescript,Javascript,Redux)
             </div>
             <div className="detail-item">
               <strong>Email:</strong> maheshjoshi90@gmail.com
