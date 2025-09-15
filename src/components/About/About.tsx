@@ -7,7 +7,7 @@ const About = () => {
   {
     const currentYear = new Date().getFullYear();
     const startYear = 2016;
-    return currentYear - startYear + 1;
+    return Math.floor(currentYear - startYear);
    }
 
 const yearsCount = countYears();

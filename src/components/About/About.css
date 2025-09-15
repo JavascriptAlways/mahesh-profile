@@ -1,21 +1,32 @@
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 20px;
     margin: 20px auto;
     max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .about-image {
     flex: 1;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .about-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
 }
 
 .about-details {
@@ -26,47 +37,117 @@
 .about-details h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-details h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .about-details p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify; /* This ensures the text is justified */
-}
-
-.about-details {
-    flex: 2;
-    padding: 20px;
-}
-
-.about-details h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .profile-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    text-align: justify;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .detail-item {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .detail-item strong {
     display: inline-block;
     width: auto;
+    margin-right: 8px;
 }
-.download-cv{
+
+.about-btn-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.download-cv {
     background: #8ec329;
     border: 1px solid #8ec329;
 }
 
-.about-linkedin-btn{
-    margin-left:10px
+.about-linkedin-btn {
+    margin-left: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .about-image {
+        padding: 10px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-details {
+        padding: 15px;
+    }
+
+    .about-details h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .about-details h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .about-btn-group {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-details h2 {
+        font-size: 24px;
+    }
+
+    .about-details h4 {
+        font-size: 15px;
+    }
+
+    .about-details p {
+        font-size: 15px;
+    }
+
+    .detail-item {
+        font-size: 15px;
+    }
 }
