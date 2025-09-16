@@ -116,10 +116,22 @@ const CertificatesPopup: React.FC<CertificatesPopupProps> = ({ visible, onHide }
                 }
                 modal
                 className="image-preview-dialog"
-                style={{ width: '95vw', maxWidth: '1400px' }}
+                style={{ width: '95vw' }}
+                contentStyle={{ overflow: 'hidden' }}
                 draggable={false}
                 resizable={false}
-                breakpoints={{ '960px': '95vw', '641px': '100vw' }}
+                maximizable
+                blockScroll
+                closeOnEscape
+                dismissableMask
+                onClick={(e) => {
+                    // Close dialog when clicking outside the image
+                    if (e.target instanceof HTMLImageElement) {
+                        e.stopPropagation();
+                    } else {
+                        handleClosePreview();
+                    }
+                }}
             >
                 <div className="image-preview-container">
                     {selectedImage && (
@@ -127,7 +139,8 @@ const CertificatesPopup: React.FC<CertificatesPopupProps> = ({ visible, onHide }
                             src={selectedImage.src}
                             alt={selectedImage.title}
                             className="full-size-image"
-                            onClick={handleClosePreview}
+                            loading="eager"
+                            onClick={(e) => e.stopPropagation()}
                         />
                     )}
                 </div>

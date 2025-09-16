@@ -66,9 +66,14 @@
 }
 
 /* Image Preview Dialog Styles */
+.image-preview-dialog {
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+}
+
 .image-preview-dialog .p-dialog-content {
     padding: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     overflow: hidden;
 }
 
@@ -76,15 +81,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    height: calc(95vh - 70px); /* Subtract header height */
+    width: 100%;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .full-size-image {
+    width: auto;
+    height: auto;
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 100%;
     object-fit: contain;
     cursor: zoom-out;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.full-size-image:hover {
+    transform: scale(1.02);
+}
+
+/* Custom scrollbar for overflow */
+.image-preview-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.image-preview-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.image-preview-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.image-preview-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* Dialog Header Styles */
