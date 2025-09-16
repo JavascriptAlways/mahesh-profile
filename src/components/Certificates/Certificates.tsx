@@ -8,7 +8,7 @@ const Certificates = () => {
     const [dialogVisible, setDialogVisible] = useState(false);
 
     return (
-        <div className="certifications-container">
+        <div className="certifications-container" id='myCertificates'>
             <div className="certifications-header">
                 <h2 className="main-title">Professional Certifications</h2>
             </div>
