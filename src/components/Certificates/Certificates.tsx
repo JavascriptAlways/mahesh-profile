@@ -9,18 +9,24 @@ const Certificates = () => {
 
     return (
         <div className="certifications-container">
+            <div className="certifications-header">
+                <h2 className="main-title">Professional Certifications</h2>
+            </div>
+
             <div className="certifications-row">
                 {/* Left Certification Card */}
                 <Card className="certification-card">
                     <div className="card-content">
-                        <img src="./images/ai_white_belt_certification.png" width="100%" alt="Certifications" className="certifications-image" />
+                        <img src="./images/ai_white_belt_certification.png" width="100%" alt="AI White Belt Certification" className="certifications-image" />
+                        <div className="card-title">AI White Belt Certification</div>
                     </div>
                 </Card>
 
                 {/* Right Certification Card */}
                 <Card className="certification-card">
                     <div className="card-content">
-                        <img src="./images/promt_engg_certificate.jpg" width="100%" alt="Certifications" className="certifications-image" />
+                        <img src="./images/promt_engg_certificate.jpg" width="100%" alt="Prompt Engineering Certificate" className="certifications-image" />
+                        <div className="card-title">Prompt Engineering Certificate</div>
                     </div>
                 </Card>
             </div>
