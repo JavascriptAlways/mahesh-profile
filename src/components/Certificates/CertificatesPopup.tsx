@@ -59,6 +59,11 @@ const CertificatesPopup: React.FC<CertificatesPopupProps> = ({ visible, onHide }
             id: 5,
             image: './images/aws_certificate.jpg',
             title: 'AWS ML Engineer Associate'
+        },
+        {
+            id: 6,
+            image: './images/pat_on_back.jpg',
+            title: 'Appreciation Certificate'
         }
     ];
 
