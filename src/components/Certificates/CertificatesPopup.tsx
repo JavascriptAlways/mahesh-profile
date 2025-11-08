@@ -64,6 +64,11 @@ const CertificatesPopup: React.FC<CertificatesPopupProps> = ({ visible, onHide }
             id: 6,
             image: './images/pat_on_back.jpg',
             title: 'Appreciation Certificate'
+        },
+        {
+            id: 7,
+            image: './images/blue_belt_certification.png',
+            title: 'AI Blue Belt Certification'
         }
     ];
 

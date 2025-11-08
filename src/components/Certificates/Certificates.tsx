@@ -17,8 +17,8 @@ const Certificates = () => {
                 {/* Left Certification Card */}
                 <Card className="certification-card">
                     <div className="card-content">
-                        <img src="./images/ai_white_belt_certification.png" width="100%" alt="AI White Belt Certification" className="certifications-image" />
-                        <div className="card-title">AI White Belt Certification</div>
+                        <img src="./images/blue_belt_certification.png" width="100%" alt="AI Blue Belt Certification" className="certifications-image" />
+                        <div className="card-title">AI Blue Belt Certification</div>
                     </div>
                 </Card>
 
