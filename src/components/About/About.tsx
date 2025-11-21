@@ -31,7 +31,7 @@ const yearsCount = countYears();
               <strong>Degree:</strong> Masters in Computer Application
             </div>
             <div className="detail-item">
-              <strong>Mobile:</strong> +919997788741
+              <strong>Mobile:</strong> +918218393390
             </div>
             <div className="detail-item">
               <strong>Address:</strong> New Delhi
@@ -44,8 +44,10 @@ const yearsCount = countYears();
             </div>
           </div>
           <div className="about-btn-group">
-            <Link to="./resume/Mahesh_Joshi_ReactJs.docx" target="_blank" download><Button className="download-cv" type="button" label="Download CV" badgeClassName="p-badge-danger" /></Link>
+            {/* <Link to="./resume/Mahesh_Joshi_ReactJs.docx" target="_blank" download><Button className="download-cv" type="button" label="Download CV" badgeClassName="p-badge-danger" /></Link> */}
             <Link to="http://www.linkedin.com/in/mahesh-joshi-011b3b77" target='_blank'><Button type="button" label="LinkedIn" className='about-linkedin-btn'/></Link>
+            <a href="https://github.com/JavascriptAlways" target="_blank" rel="noopener noreferrer"><Button type="button" label="GitHub" icon="pi pi-github" className='about-github-btn' /></a>
+            
           </div>
         </div>
       </div>

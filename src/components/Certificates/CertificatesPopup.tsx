@@ -69,6 +69,26 @@ const CertificatesPopup: React.FC<CertificatesPopupProps> = ({ visible, onHide }
             id: 7,
             image: './images/blue_belt_certification.png',
             title: 'AI Blue Belt Certification'
+        },
+        {
+            id: 8,
+            image: './images/github_copilot.png',
+            title: 'GitHub Copilot'
+        },
+        {
+            id: 9,
+            image: './images/intercultural.png',
+            title: 'Intercultural Competence'
+        },
+        {
+            id: 10,
+            image: './images/hipaa.png',
+            title: 'HIPAA Certification'
+        },        
+        {
+            id: 11,
+            image: './images/artificial_intelligence.png',
+            title: 'Artificial Intelligence Certification'
         }
     ];
 
